@@ -1,217 +1,399 @@
-#   TSCR - Top Secret Chrono Crypt (ex TimeCRYPT)
+# TSCR – Top Secret Chrono Crypt (ex TimeCRYPT)
 
-**Premium Individual Security Tool**
+**Premium Data & Secrets Protection Tool**  
 **Chrono-Entropic Encryption Engine**  
-*Time-variable encryption with controlled unpredictability.*
+*Time-variable encryption with controlled unpredictability at the core of a multi-platform protection system for files, text, keys, passwords, and private secrets.*
 
 **Share YOUR SECRETS only when you want to. 😉😎**
 
-TSCR is a multi-platform encryption system designed for individuals or companies who require real, reliable and advanced data protection without relying on cloud infrastructure or external trust layers.
-Unlike traditional encryption utilities, TSCR treats **time** and **controlled randomness** as first-class security parameters, enabling dynamically evolving cipher states while remaining fully reversible under valid conditions.
+---
 
-Built around an authentic proprietary chrono-entropic architecture, TSCR does not simply wrap existing encryption standards into a new interface.
-Instead, it introduces an original time-variable transformation model designed to increase structural unpredictability while maintaining deterministic reversibility under valid conditions.
+## Overview
 
-At its core, TSCR introduces a chrono-based security model built on time-dependent transformation, controlled unpredictability, and key-assisted encryption logic.  
-Rather than acting as a single fixed algorithm, the system is structured as a layered encryption framework composed of a core engine, operational profiles, and multiple interface environments.
+**TSCR – Top Secret Chrono Crypt** is a proprietary, multi-platform data protection and encryption system designed for individuals, professionals, organizations, and companies that need direct control over sensitive data, private files, keys, passwords, tokens, notes, and other personal or business secrets.
 
-This architecture enables different operational profiles designed to adapt encryption behaviour to specific security needs — ranging from lightweight dynamic protection to paranoid-level entropy models.
+TSCR is built around an original **chrono-entropic architecture** in which **time-dependent transformation** and **controlled unpredictability** are treated as structural security parameters, not as decorative or post-processing effects.
 
-TSCR represents:
-- a unified encryption&data protection ecosystem
-- a genuine chrono-based proprietary algorithm
-- controlled randomness as a native security layer
-- a multi-platform application stack including GUI, CLI tools, and system integrations
-- structured secret storage through **Trezor Tajni / Secret Vault**
-- secret generation workflows through **TT-Generator**
-- local & remote server-DB encrypted storage formats and controlled data handling
-- extended system-info, hybrid licensing system, settings, and related support functionality
+Unlike traditional tools that primarily rely on long-known, widely analysed, and standardized cryptographic patterns, TSCR introduces its own proprietary chrono-entropic model. This original black-box engine design, combined with key-assisted protection logic, native TSCR profiles, AES integration, and unified workflows for protecting text, files, and secrets, gives TSCR a distinct security identity and an important competitive advantage.
 
-Its multi-profile architecture combines native chrono-entropic encryption strategies with hybrid AES integration, allowing the system to adapt between lightweight dynamic encryption and high-performance large-data processing.
+Rather than acting as a single fixed algorithm or a simple wrapper around existing encryption standards, TSCR is structured as a layered protection framework composed of a proprietary core engine, multiple operational encryption profiles, unified workflows for text, files, and secrets, local-first storage and protection logic, and multiple interface environments.
 
-This design enables advanced operational profiles, including **TOP SECRET mode**, a paranoid-level security profile intended for high-entropy data protection scenarios.
-The system is architected with a clear separation between:
-- the core engine (algorithm layer)
-- operational profiles and modes
-- interfaces and environments (GUI, CLI, service components, SDK)
+This architecture enables different protection profiles designed to adapt encryption behaviour to specific needs — from balanced everyday use, through **PARANOID-LEVEL** native TSCR protection, to AES-integrated processing for larger files and data volumes.
 
-The term **“Top Secret”** is used intentionally and in a controlled context:
-- as a brand identity
-- as the designation of the highest security profile
-- not as a claim of governmental classification or certification
+TSCR brings together practical data protection, local encryption, secret management, secure value generation, a multilingual interface, system diagnostics, and licensing workflow into one integrated environment. In that way, it represents a healthy and usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
 
-Originally evolving from the original **TimeCRYPT** project (circa 2000), later known as **ECCrypt – ErraticChronoCRYPT**, TSCR today represents a standalone security platform engineered as a modern, premium desktop-first encryption solution.
+Core TSCR workflows are designed to work locally, without requiring cloud infrastructure or external trust layers. Future service, shell, API, CLI, mobile, browser-extension, portal, and online-vault layers are planned as part of the broader TSCR development roadmap.
 
-✨ Key Concepts
-TSCR introduces several fundamental principles:
-⏱ Chrono-based Encryption
-Time is treated as a first-class parameter within the encryption process, influencing cipher generation while maintaining reversible decoding.
-🎲 Controlled Randomness
-The algorithm integrates stochastic behaviour as a structural security component rather than a post-processing layer.
-🔑 Key-Assisted Security Model
-The encryption key acts as a control factor rather than the sole security primitive.
-🛡 Multi-Profile Architecture
-Different operational profiles provide varying security characteristics:
-    • TSCR mode – native/optimised chrono-erratic based encryption
-    • TOP SECRET mode – TSCR extended paranoid-level security profile
-    • TSCR AES mode – AES-based encryption using standard crypto libraries „wraped“ in TSCR hashing
+TSCR combines and represents:
 
-## Secret Vault (TT)
-
-TSCR includes **Trezor Tajni / Secret Vault**, a structured secret-handling subsystem intended for storing and managing different types of private data.
-
-Its current direction includes:
-- multiple entry types
-- encrypted local vault storage
-- add / edit / delete / search workflows
-- import / export workflows
-- generator-assisted secret creation
-
-## TT-Generator
-
-TSCR also includes **TT-Generator**, a practical generator for different kinds of secrets such as:
-- passwords
-- PINs
-- passphrases
-- tokens
-- API-style values
-- other controlled secret outputs
-
-The generator is intended as part of a broader security workflow, not as a standalone gimmick.
-
-🧠 Project Identity
-Layer	Name
-Project / Distribution	top_secret_chrono_crypt
-Main Python Package	tscr
-Core Class	TSCR
-File Extension	.tscr
-
-🧩 Features
-    • Text encryption and decryption
-    • File encryption for any file type
-    • Cross-platform architecture
-    • GUI app with custom sys-info panel
-    • CLI & sheel tool
-    • AES hybrid encryption profile
-    • structured secret storage through **Trezor Tajni / Secret Vault**
-    • secret generation workflows through **TT-Generator**
-    • local encrypted storage formats and controlled data handling
-    • Multi-encryption demonstration mode
-    • Multi-language interface
-    • License system support
-
-## 🧩 Multi-Profile Architecture
-
-TSCR provides multiple operational encryption profiles designed for different security models, performance characteristics, and data sizes.
-
-Unlike traditional tools that expose only algorithm selection, TSCR profiles represent **distinct encryption strategies**.
+- a unified encryption and data-protection environment,
+- a genuine chrono-based proprietary algorithm,
+- controlled unpredictability as a native security layer,
+- text encryption and decryption workflows,
+- file encryption and decryption workflows,
+- multiple encryption profiles: TSCR, TOP SECRET, and TSCR AES,
+- structured secret storage through **Trezor Tajni / Secret Vault**,
+- secret generation workflows through **TT-Generator / Secret Generator**,
+- multilingual GUI runtime and TSCR-AI language support,
+- extended system-information and diagnostic functionality,
+- hybrid licensing, activation, settings, and related support workflows,
+- local encrypted storage formats and controlled data handling,
+- prepared foundations for future service, shell, API, CLI, mobile, browser-extension, portal, online-vault, and server/database encrypted-storage layers.
 
 ---
 
-### 🔹 TSCR Mode — Native Chrono-Entropic Encryption
+## Product Identity
 
-The optimised TSCR profile implements the native chrono-entropic algorithm.
+| Area | Value |
+|---|---|
+| Product | TSCR – Top Secret Chrono Crypt |
+| Previous line | TimeCRYPT / ECCrypt – ErraticChronoCRYPT |
+| Tagline | Premium Data & Secrets Protection Tool |
+| Engine | Chrono-Entropic Encryption Engine |
+| Main file extension | `.tscr` |
+| Primary model | Multi-platform, local-first data and secrets protection |
+| License | Proprietary – All rights reserved |
 
-Key characteristics:
-
-- Multi-layer encryption with variable key evolution
-- Time-dependent transformation
-- Controlled unpredictability as a structural component
-- Minimal file size overhead (near-zero growth for small files)
-- High performance for text and smaller data blocks
-
-This mode represents the most balanced implementation of the original TSCR philosophy — fast, lightweight, and structurally dynamic.
-
----
-
-### 🔹 TOP SECRET Mode — Extended Chrono-Entropic Profile
-
-TOP SECRET mode extends the native TSCR engine with additional entropy expansion and a significantly larger symbol set.
-
-Key differences compared to TSCR Mode:
-
-- Uses a **16× larger encryption set**
-- Multi-layer encryption with extended transformation depth
-- Higher entropy density per encryption pass
-- Increased file size overhead (~3× for files)
-- Designed for maximum resistance scenarios
-
-Even when ignoring time and randomness components, the expanded character space alone increases brute-force complexity significantly.  
-TOP SECRET mode is intended for paranoid-level protection where security priority outweighs storage efficiency.
+The term **“Top Secret”** is used as a product name and security-profile designation. It does **not** imply governmental classification, approval, certification, or endorsement.
 
 ---
 
-### 🔹 TSCR AES Mode — Hybrid AES Integration
+## Core Concepts
 
-TSCR AES mode integrates standard AES encryption libraries within the TSCR framework.
+### Chrono-Entropic Encryption
 
-Characteristics:
+TSCR uses a proprietary chrono-entropic approach where time, controlled unpredictability, key-assisted transformation, and deterministic reversibility under valid conditions work together as part of the protection model.
 
-- Single-pass encryption using AES
-- Wrapped with TSCR hashing and metadata handling
-- Hardware-accelerated performance (C-based crypto backend)
-- Recommended for large files and bulk data
+### Local-First Security
 
-Compared to native TSCR modes:
+Sensitive data is primarily processed and protected locally. The user remains in direct control of keys, files, vault data, and protected outputs.
 
-- Faster processing for large datasets
-- Moderate file overhead (~2×)
-- Less structural variability than chrono-entropic profiles
+### Key-Based Protection
 
-This profile exists to combine the reliability and speed of standard cryptography with TSCR’s unified container format.
+The user key remains a critical security element. Without the correct key and valid protected data, encrypted TSCR content cannot be practically restored into readable form.
+
+### Layered Security Workflow
+
+TSCR is not intended to be only a single-purpose encrypt/decrypt utility. It brings together text encryption, file protection, secret storage, secret generation, multilingual support, licensing, and diagnostic/security-oriented workflows.
 
 ---
 
-### ⚖️ Summary
+## Main Features
 
-| Profile | Layers | Entropy Model | Speed (Small Data) | Speed (Large Files) | File Overhead |
-|---|---|---|---|---|---|
-| TSCR | Multi-layer | Chrono-Entropic | ⭐⭐⭐⭐ | ⭐⭐ | Minimal |
-| TOP SECRET | Deep Multi-layer | Extended Chrono-Entropic | ⭐⭐⭐ | ⭐ | High (~3×) |
-| TSCR AES | Single-pass | Standard AES | ⭐⭐ | ⭐⭐⭐⭐⭐ | Medium (~2×) |
+- Text encryption and decryption
+- File encryption and decryption using the `.tscr` container format
+- Multiple encryption profiles: TSCR, TOP SECRET, and TSCR AES
+- Local Secret Vault for storing structured private data
+- Secret Generator for passwords, passphrases, PINs, tokens, API keys, UUIDs, WiFi passwords, usernames, test card values, and short secure phrases
+- Multi-TSCR workflow for generating multiple encrypted versions of the same input
+- Multilingual GUI runtime
+- TSCR-AI language generation workflow
+- Multilingual passphrase dictionary support
+- System information and diagnostic panel
+- Hybrid license and activation workflow
+- Offline-first local operation
+- Prepared architectural foundation for future service, shell, API, CLI, mobile, browser-extension, portal, and online-vault development
 
-🧾 File Format
-TSCR uses a single container format:
-.tscr  → TSCR File (Top Secret Chrono Crypt File)
-The file header embeds internal markers identifying the encryption mode.
+---
 
-🖥 Application Components
-    • Text Encryption Interface
-    • File Encryption Manager
-    • Key Managament
-    • Multi-TSCR Demonstration Module
-    • System Information Panel
-    • License & Activation Manager
-    • Language Configuration
+## Encryption Profiles
 
-⚙️ Example Usage (Python)
-import tscr
+TSCR provides three main operational protection profiles.
 
-engine = tscr.TSCR()
+### TSCR Mode
 
-encrypted = engine.ts_crypt("Hello World", key="MyKey")
-decrypted = engine.ts_decrypt(encrypted, key="MyKey")
+**TSCR mode** is the balanced native chrono-entropic profile for everyday use.
 
-🧬 Project History
-The original algorithm was created in ~2000 as part of the “ZAPATA” POS software package to address data protection challenges that existing encryption solutions at the time did not fully solve.
-The project evolved through several phases:
-    • TimeCRYPT (initial concept)
-    • ECCrypt – ErraticChronoCRYPT
-    • TSCR – Top Secret Chrono Crypt
+It is suitable for smaller and medium text/data workloads where the user wants a practical balance between protection, speed, and output size.
 
-## 👤 Author:       Vladislav M. Marković
-                 time.crypt.secret@gmail.com
+### TOP SECRET Mode
 
-## 🏷 Version:      2.4.1.1
-        engine      2.4.1.1
-        GUI         1.0.1.6
-## 📆 Date:         2026-05-02
+**TOP SECRET mode** is a **PARANOID-LEVEL** security profile that uses a multiple **(x256 !!)** expanded encryption set.
 
-## 📄 License:
-Proprietary — All rights reserved.
-This software is protected by copyright law.
-Unauthorized distribution or reproduction may be subject to legal consequences.
+It is intended for scenarios where protection has priority over speed and output size. As expected, it is the slowest native TSCR profile, but for short texts it can have very favorable overhead.
 
-## ⚠️ Disclaimer
-“Top Secret” is used as a brand and security profile designation.
-It does not imply governmental classification or certification.
+Use this profile for highly sensitive text, compact secrets, keys, credentials, confidential notes, and other scenarios where maximum native TSCR protection is preferred over speed and output size.
+
+### TSCR AES Mode
+
+**TSCR AES mode** is a TSCR-customized AES-integrated profile intended for efficient work with larger files and larger amounts of data.
+
+Before the AES layer, data is additionally prepared, processed, pre-encrypted, and hashed through the TSCR workflow, so it is not intended to be practically decrypted by a classic AES procedure alone without the TSCR AES decryptor.
+
+This mode is generally the most practical choice for larger files and bulk data.
+
+---
+
+## Secret Vault
+
+TSCR includes **Trezor Tajni / Secret Vault**, a structured local vault for storing and managing sensitive data.
+
+The vault is intended for:
+
+- login credentials,
+- accounts,
+- banking data,
+- payment card data,
+- API keys,
+- tokens,
+- secure notes,
+- personal secrets,
+- and other sensitive records.
+
+Secret Vault supports workflows such as:
+
+- add new secret,
+- edit existing secret,
+- delete secret,
+- search and filter records,
+- copy selected values,
+- import secrets,
+- export vault data,
+- use Secret Generator directly from the vault workflow.
+
+Secrets are stored in a local TSCR-protected vault, so even if an attacker obtains the vault file, the stored content is not intended to be usable without the required protection context.
+
+---
+
+## Secret Generator
+
+TSCR includes **Secret Generator** / **TT-Generator** / **SV-Generator**, depending on the active language context.
+
+It can generate multiple controlled secret types:
+
+- passwords,
+- passphrases,
+- PIN codes,
+- tokens,
+- API keys,
+- UUID values,
+- usernames,
+- WiFi passwords,
+- test card values,
+- short secure phrases.
+
+The generator also includes a practical estimator for approximate strength, entropy, and estimated cracking time.
+
+Passphrase generation can use localized and multilingual dictionaries, including **LangMIX** mode for combining words from multiple language dictionaries.
+
+---
+
+## Multilingual Runtime
+
+TSCR includes a multilingual interface system based on a local encrypted language file, database-backed language support, and fallback logic.
+
+Supported language areas include:
+
+- GUI labels,
+- buttons,
+- menus,
+- dialogs,
+- tooltips,
+- Help/About documentation,
+- status messages,
+- language names,
+- script names,
+- passphrase dictionary metadata.
+
+TSCR also includes a **TSCR-AI language assistant** workflow for generating additional interface languages and passphrase dictionaries, using checkpoint/resume logic, structure validation, HTML-safe processing, and provider fallback.
+
+AI-generated languages are practically usable, but they should be treated as AI-generated drafts until reviewed by a human.
+
+---
+
+## System Information
+
+TSCR includes an extended system information panel with diagnostic and informational data such as:
+
+- system information,
+- user environment,
+- CPU and memory data,
+- disk/storage data,
+- network information,
+- public IP,
+- geo information when available,
+- weather/meteo information when available,
+- air-quality/allergen information when available.
+
+This module is primarily informational and diagnostic.
+
+---
+
+## License and Activation
+
+TSCR includes a hybrid license workflow with support for license status, plan selection, purchase ID, activation code, license validity, and user ID display.
+
+License concepts include:
+
+- PRO time-limited licenses,
+- LEGACY / lifetime-style license,
+- offline scenarios,
+- online scenarios,
+- automatic activation scenarios,
+- license-status-based access control.
+
+Final licensing, purchase, donation, activation, and support flows depend on the active release channel and TSCR portal/backend availability.
+
+---
+
+## File Format
+
+TSCR uses the `.tscr` format for encrypted files and selected protected local application data.
+
+When decrypting TSCR files, the application can detect the relevant internal protection profile so the user does not have to manually know which mode was used for encryption.
+
+---
+
+## Installation
+
+Download the package for your platform from the TSCR release page:
+
+https://github.com/vmmarko/TSCR_test_releases/releases
+
+Typical installation flow:
+
+1. Download the package for your platform.
+2. Extract the archive.
+3. Run the TSCR executable.
+4. Set your login password and personal/master key.
+5. Start protecting your files, text, and secrets.
+
+Available packages may include:
+
+- Windows build
+- Linux build
+
+Additional platform-specific builds and mobile versions are planned as part of the TSCR development roadmap.
+
+Exact package names and version numbers depend on the current release.
+
+---
+
+## Basic Usage
+
+### Encrypting Text
+
+1. Open the **Text** tab.
+2. Enter the text you want to encrypt.
+3. Select the encryption profile.
+4. Click **Encrypt**.
+5. Copy or save the encrypted result as needed.
+
+### Decrypting Text
+
+1. Open the **Text** tab.
+2. Enter the encrypted text.
+3. Make sure the correct key is active.
+4. Click **Decrypt**.
+
+### Encrypting Files
+
+1. Open the **Files** tab.
+2. Select the target file.
+3. Choose the desired protection profile.
+4. Click **Encrypt file**.
+5. The encrypted output will be saved as a `.tscr` file.
+
+### Working with Secret Vault
+
+1. Open the **Vault** tab.
+2. Add, edit, search, copy, import, or export secrets.
+3. Use Secret Generator when you need a new strong value.
+4. Keep backups/export files protected.
+
+---
+
+## Security Recommendations
+
+- Keep your master key safe.
+- Do not share your key through insecure channels.
+- Use strong, unique keys and passwords.
+- Use TOP SECRET mode for highly sensitive compact data.
+- Use TSCR AES mode for larger files.
+- Keep Secret Vault exports protected.
+- Delete or encrypt unprotected export files after use.
+- Do not disable application login without a clear reason.
+- Regularly update TSCR when new versions are available.
+- Treat cloud/server storage as untrusted unless the data is encrypted before leaving your local environment.
+
+---
+
+## Roadmap
+
+The TSCR development direction includes deeper development toward:
+
+- local TSCR service / agent,
+- shell and context-menu integration,
+- CLI,
+- local API,
+- browser-extension bridge,
+- mobile version,
+- portal and download system,
+- license backend,
+- online vault,
+- business/team-oriented models,
+- optional TSCR-AI tools.
+
+The long-term vision is to evolve TSCR from a premium data and secrets protection tool into a broader:
+
+**Data & Secrets Security Ecosystem**
+
+---
+
+## Project History
+
+The original algorithmic idea dates back to around 2000, when it was created as part of the “ZAPATA” POS software context to address practical data-protection needs.
+
+The project evolved through several stages:
+
+- TimeCRYPT
+- ECCrypt – ErraticChronoCRYPT
+- TSCR – Top Secret Chrono Crypt
+
+Today, TSCR is developed as a standalone proprietary security product focused on practical data and secrets protection.
+
+---
+
+## Version
+
+| Component | Version |
+|---|---|
+| TSCR | 2.4.1.2 |
+| Engine | 2.4.1.2 |
+| GUI | 1.0.1.7 |
+
+Release date: 2026-05-05
+
+---
+
+## Author
+
+**Vladislav M. Marković**  
+Email: `time.crypt.secret@gmail.com`
+
+---
+
+## License
+
+TSCR is proprietary software.
+
+Copyright © Vladislav M. Marković.  
+All rights reserved.
+
+Unauthorized usage, copying, modification, distribution, reverse engineering, or reproduction may be subject to legal consequences.
+
+For licensing, permissions, commercial use, or support, contact:
+
+`time.crypt.secret@gmail.com`
+
+---
+
+## Disclaimer
+
+TSCR is a proprietary data and secrets protection tool.
+
+The term **“Top Secret”** is used as a brand name and security profile designation. It does not imply governmental classification, approval, certification, or endorsement.
+
+No software can provide absolute security in every possible scenario. Security depends on correct use, safe key handling, system integrity, and the user’s operational environment.
+
+If you lose your key, TSCR-protected data may not be recoverable.

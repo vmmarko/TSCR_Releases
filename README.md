@@ -20,7 +20,7 @@ Rather than acting as a single fixed algorithm or a simple wrapper around existi
 
 This architecture enables different protection profiles designed to adapt encryption behaviour to specific needs — from balanced everyday use, through AES-integrated processing for larger files and data volumes, to **TOP SECRET** TSCR for **PARANOID-LEVEL** protection.
 
-TSCR brings together practical data protection, local encryption, secret management, secure value generation, multilingual interface support, system diagnostics, update handling, and licensing workflow into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
+TSCR brings together practical data protection, local encryption, secret management, secure value generation, multilingual interface support, system diagnostics, update handling, licensing workflow, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
 
 Core TSCR workflows are designed to work locally, without requiring cloud infrastructure or external trust layers. Future service, shell, API, CLI, mobile, browser-extension, portal, and AI-assistant layers are planned as part of the broader TSCR development roadmap.
 
@@ -43,6 +43,8 @@ TSCR combines and represents:
 - extended system-information and diagnostic functionality,
 - fully automated update support,
 - hybrid licensing, activation, settings, and related support workflows,
+- controlled Trial, Demo, Recovery, and restricted-access runtime states,
+- application-integrity, anti-reset, anti-abuse, and license-protection mechanisms,
 - prepared foundations for future service, shell, API, CLI, mobile, browser-extension, portal, business/team, and TSCR-AI security-assistant layers.
 
 ---
@@ -81,6 +83,12 @@ The user key remains a critical security element. Without the correct key and va
 
 TSCR is not intended to be only a single-purpose encrypt/decrypt utility. It brings together text encryption, file protection, secret storage, secret generation, multilingual support, updates, licensing, and diagnostic/security-oriented workflows.
 
+### Application Integrity and Controlled Access
+
+TSCR also includes application-integrity, license-protection, anti-reset, anti-abuse, and controlled demo/recovery mechanisms intended to help preserve a trusted runtime environment and reduce unauthorized use, repeated trial abuse, local-state manipulation, and suspicious execution scenarios.
+
+These mechanisms are intentionally described at a high level. Their purpose is to protect the application environment itself without exposing internal protection logic, storage details, or classification rules.
+
 ---
 
 ## Main Features
@@ -99,6 +107,8 @@ TSCR is not intended to be only a single-purpose encrypt/decrypt utility. It bri
 - System information and diagnostic panel
 - Fully automated update support
 - Hybrid license and activation workflow
+- Controlled Trial, Demo, Recovery, and restricted-access runtime states
+- Application-integrity, anti-reset, anti-abuse, and license-protection mechanisms
 - Offline-first local operation
 - Prepared architectural foundation for future service, shell, API, CLI, mobile, browser-extension, portal, business/team, and TSCR-AI security-assistant development
 
@@ -231,16 +241,24 @@ This module is primarily informational and diagnostic.
 
 ## License and Activation
 
-TSCR includes a hybrid license workflow with support for license status, plan selection, purchase ID, activation code, license validity, and user ID display.
+TSCR includes a hybrid license workflow with support for license status, plan selection, purchase ID, activation code, license validity, controlled access states, and user ID display.
 
-License concepts include:
+License and access concepts include:
 
 - PRO time-limited licenses,
 - LEGACY / lifetime-style license,
+- Trial mode for eligible valid first-time users/devices,
+- Demo mode as a controlled limited-access state,
+- Recovery / restricted states for unresolved identity, integrity, protection, or license situations,
 - offline scenarios,
 - online scenarios,
 - automatic activation scenarios,
-- license-status-based access control.
+- license-status-based access control,
+- anti-reset and anti-abuse protection intended to reduce repeated trial abuse and suspicious runtime scenarios.
+
+Trial and Demo are not the same state. Trial is intended for a valid new user/device when the active release policy allows trial access. Demo is a controlled mode that may be used for limited evaluation, testing, VM/sandbox-like environments, recovery situations, suspicious local-state conditions, or other non-regular runtime contexts.
+
+TSCR may restrict or limit access when the application cannot establish a trusted identity, license, integrity, or local protection state. This is part of the application protection model and is intended to preserve reliable licensing, reduce misuse, and protect the expected runtime environment.
 
 Final licensing, purchase, donation, activation, and support flows depend on the active release channel and TSCR portal/backend availability.
 
@@ -324,6 +342,8 @@ Exact package names and version numbers depend on the current release.
 - Delete or encrypt unprotected export files after use.
 - Do not disable application login without a clear reason.
 - Regularly update TSCR when new versions are available.
+- Use only official TSCR release/update channels.
+- Do not manually delete or reset local license/protection/application data unless you understand the consequences; the application may enter Demo, Recovery, or restricted-access state.
 - Treat cloud/server storage as untrusted unless the data is encrypted before leaving your local environment.
 
 ---
@@ -367,11 +387,11 @@ Today, TSCR is developed as a standalone proprietary security product focused on
 
 | Component | Version |
 |---|---|
-| TSCR | 2.4.1.2 |
-| Engine | 2.4.1.2 |
-| GUI | 1.0.1.7 |
+| TSCR | 2.4.1.2j |
+| Engine | 2.4.1.2j |
+| GUI | 1.0.2.2 |
 
-Release date: 2026-05-05
+Release date: 2026-05-28
 
 ---
 
@@ -404,5 +424,7 @@ TSCR is a proprietary data and secrets protection tool.
 The term **“Top Secret”** is used as a brand name and security profile designation. It does not imply governmental classification, approval, certification, or endorsement.
 
 No software can provide absolute security in every possible scenario. Security depends on correct use, safe key handling, system integrity, and the user’s operational environment.
+
+Application-integrity, anti-reset, anti-abuse, licensing, Demo, Recovery, and restricted-access mechanisms are defense-in-depth controls. They are designed to increase protection and reduce misuse, but they do not represent an absolute guarantee against every possible form of tampering, reverse engineering, or hostile local execution environment.
 
 If you lose your key, TSCR-protected data may not be recoverable.

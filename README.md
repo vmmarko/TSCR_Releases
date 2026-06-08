@@ -20,9 +20,9 @@ Rather than acting as a single fixed algorithm or a simple wrapper around existi
 
 This architecture enables different protection profiles designed to adapt encryption behaviour to specific needs — from balanced everyday use, through AES-integrated processing for larger files and data volumes, to **TOP SECRET** TSCR for **PARANOID-LEVEL** protection.
 
-TSCR brings together practical data protection, local encryption, secret management, secure value generation, multilingual interface support, system diagnostics, update handling, licensing workflow, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
+TSCR brings together practical data protection, local encryption, secret management, secure value generation, multilingual interface support, desktop tray/shortcut access, system diagnostics, update handling, licensing workflow, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
 
-Core TSCR workflows are designed to work locally, without requiring cloud infrastructure or external trust layers. Future service, shell, API, CLI, mobile, browser-extension, portal, and AI-assistant layers are planned as part of the broader TSCR development roadmap.
+Core TSCR workflows are designed to work locally, without requiring cloud infrastructure or external trust layers. The desktop application now includes a dedicated app-interface layer for system tray access, quick show/hide behaviour, shortcut handling, and auxiliary desktop utilities. Future service, shell, API, CLI, mobile, browser-extension, portal, and AI-assistant layers are planned as part of the broader TSCR development roadmap.
 
 TSCR combines and represents:
 
@@ -40,6 +40,9 @@ TSCR combines and represents:
 - multilingual GUI runtime with more than 20 supported languages,
 - **TSCR-AI language generation** support for non-listed interface languages,
 - multilingual passphrase dictionary support,
+- desktop app-interface layer with system tray menu, quick access shortcuts, and controlled show/hide behaviour,
+- Windows global shortcut support using **F9** and **Ctrl+F9**,
+- Linux/KDE/Wayland shortcut bridge support through D-Bus, `.desktop` launcher integration, and KGlobalAccel setup,
 - extended system-information and diagnostic functionality,
 - fully automated update support,
 - hybrid licensing, activation, settings, and related support workflows,
@@ -59,6 +62,7 @@ TSCR combines and represents:
 | Engine | Chrono-Entropic Encryption Engine |
 | Main file extension | `.tscr` |
 | Primary model | Multi-platform, local-first data and secrets protection |
+| Website | https://tscr.x10.mx |
 | License | Proprietary – All rights reserved |
 
 The term **“Top Secret”** is used as a product name and security-profile designation. It does **not** imply governmental classification, approval, certification, or endorsement.
@@ -104,6 +108,9 @@ These mechanisms are intentionally described at a high level. Their purpose is t
 - Multilingual GUI runtime with more than 20 supported languages
 - TSCR-AI language generation workflow for non-listed interface languages
 - Multilingual passphrase dictionary support
+- Desktop system tray menu with quick show/hide and tab access
+- Windows global shortcuts using **F9** and **Ctrl+F9**
+- Linux/KDE/Wayland shortcut bridge support through D-Bus, `.desktop` launchers, and KGlobalAccel setup
 - System information and diagnostic panel
 - Fully automated update support
 - Hybrid license and activation workflow
@@ -239,6 +246,26 @@ This module is primarily informational and diagnostic.
 
 ---
 
+## Desktop Interface, Tray, and Shortcuts
+
+TSCR includes a desktop app-interface layer that extends the main GUI with system-level convenience features.
+
+Supported desktop-interface functions include:
+
+- system tray icon and tray menu,
+- quick show/hide access to the main TSCR window,
+- direct tray access to key TSCR areas such as Text, Files, Vault, Generator, SysInfo, and related tools,
+- safe exit handling from hidden/tray state,
+- Windows global shortcut support using **F9** and **Ctrl+F9**,
+- Linux/KDE/Wayland shortcut bridge support through D-Bus, `.desktop` launcher integration, and KGlobalAccel setup,
+- internal Qt shortcut fallback for environments where global desktop shortcuts are not available,
+
+On Windows, **F9** and **Ctrl+F9** are intended as quick show/hide shortcuts. Some applications may reserve or intercept **F9**, so **Ctrl+F9** is also supported as a more reliable alternative.
+
+On Linux/KDE/Wayland, TSCR can use a D-Bus + `.desktop` + KGlobalAccel setup for global shortcuts. Depending on the desktop session and shortcut registration state, a manual KDE shortcut setup, logout, or session restart may be required before the shortcut becomes active. On other Linux desktop environments, tray access remains available, while shortcut behaviour may fall back to internal Qt shortcuts when TSCR is focused.
+
+---
+
 ## License and Activation
 
 TSCR includes a hybrid license workflow with support for license status, plan selection, purchase ID, activation code, license validity, controlled access states, and user ID display.
@@ -248,7 +275,8 @@ License and access concepts include:
 - PRO time-limited licenses,
 - LEGACY / lifetime-style license,
 - Trial mode for eligible valid first-time users/devices,
-- Demo mode as a controlled limited-access state,
+- Demo mode as a controlled one-hour limited-access state with visible status/remaining-time information,
+- automatic transition from expired Demo mode to restricted-access state,
 - Recovery / restricted states for unresolved identity, integrity, protection, or license situations,
 - offline scenarios,
 - online scenarios,
@@ -256,7 +284,7 @@ License and access concepts include:
 - license-status-based access control,
 - anti-reset and anti-abuse protection intended to reduce repeated trial abuse and suspicious runtime scenarios.
 
-Trial and Demo are not the same state. Trial is intended for a valid new user/device when the active release policy allows trial access. Demo is a controlled mode that may be used for limited evaluation, testing, VM/sandbox-like environments, recovery situations, suspicious local-state conditions, or other non-regular runtime contexts.
+Trial and Demo are not the same state. Trial is intended for a valid new user/device when the active release policy allows trial access. Demo is a controlled one-hour mode that may be used for limited evaluation, testing, VM/sandbox-like environments, recovery situations, suspicious local-state conditions, or other non-regular runtime contexts. The application should present Demo status and remaining time to the user, and after the Demo window expires it should move to restricted-access state instead of resetting the Demo period on restart.
 
 TSCR may restrict or limit access when the application cannot establish a trusted identity, license, integrity, or local protection state. This is part of the application protection model and is intended to preserve reliable licensing, reduce misuse, and protect the expected runtime environment.
 
@@ -274,7 +302,11 @@ When decrypting TSCR files, the application can detect the relevant internal pro
 
 ## Installation
 
-Download the package for your platform from the TSCR release page:
+Visit the official TSCR website:
+
+https://tscr.x10.mx
+
+Download packages are available from the TSCR release page:
 
 https://github.com/vmmarko/TSCR_test_releases/releases
 
@@ -329,6 +361,12 @@ Exact package names and version numbers depend on the current release.
 3. Use Secret Generator when you need a new strong value.
 4. Keep backups/export files protected.
 
+### Quick Access, Tray, and Shortcuts
+
+1. Use the system tray menu for quick access to main TSCR areas when the application is minimized or hidden.
+2. On Windows, use **F9** or **Ctrl+F9** for quick show/hide access.
+3. On Linux/KDE/Wayland, use the configured TSCR shortcut bridge where available.
+
 ---
 
 ## Security Recommendations
@@ -344,6 +382,7 @@ Exact package names and version numbers depend on the current release.
 - Regularly update TSCR when new versions are available.
 - Use only official TSCR release/update channels.
 - Do not manually delete or reset local license/protection/application data unless you understand the consequences; the application may enter Demo, Recovery, or restricted-access state.
+- Do not rely on application restart to reset Demo access; Demo is a controlled limited-time state tied to the runtime protection workflow.
 - Treat cloud/server storage as untrusted unless the data is encrypted before leaving your local environment.
 
 ---
@@ -352,6 +391,7 @@ Exact package names and version numbers depend on the current release.
 
 The TSCR development direction includes deeper development toward:
 
+- deeper desktop-interface integration,
 - local TSCR service / agent,
 - shell and context-menu integration,
 - CLI,
@@ -387,11 +427,11 @@ Today, TSCR is developed as a standalone proprietary security product focused on
 
 | Component | Version |
 |---|---|
-| TSCR | 2.4.1.2j |
-| Engine | 2.4.1.2j |
-| GUI | 1.0.2.2 |
+| TSCR | 2.4.1.3 |
+| Engine | 2.4.1.3 |
+| GUI | 1.0.2.6 |
 
-Release date: 2026-05-28
+Release date: 2026-06-08
 
 ---
 

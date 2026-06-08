@@ -37,6 +37,7 @@ TSCR combines and represents:
 - encrypted local and server/database storage models with controlled data handling,
 - secret generation workflows through **TT-Generator / Secret Generator**,
 - a practical Secret Estimator for secret strength evaluation,
+- internal application shortcut **Alt+G** for quick access to Secret Generator / TT-Generator,
 - multilingual GUI runtime with more than 20 supported languages,
 - **TSCR-AI language generation** support for non-listed interface languages,
 - multilingual passphrase dictionary support,
@@ -104,6 +105,7 @@ These mechanisms are intentionally described at a high level. Their purpose is t
 - Online Vault support for server/database-backed secret backup and migration workflows
 - Secret Generator for passwords, passphrases, PINs, tokens, API keys, UUIDs, WiFi passwords, usernames, test card values, and short secure phrases
 - Secret Estimator for approximate strength, entropy, and estimated cracking-time evaluation
+- Internal application shortcut **Alt+G** for quick access to Secret Generator / TT-Generator
 - Multi-TSCR workflow for generating multiple encrypted versions of the same input
 - Multilingual GUI runtime with more than 20 supported languages
 - TSCR-AI language generation workflow for non-listed interface languages
@@ -203,6 +205,8 @@ The generator also includes a practical estimator for approximate strength, entr
 
 Passphrase generation can use localized and multilingual dictionaries, including **LangMIX** mode for combining words from multiple language dictionaries.
 
+- Internal application shortcut **Alt+G** for quick access to Secret Generator / TT-Generator
+
 ---
 
 ## Multilingual Runtime
@@ -255,6 +259,7 @@ Supported desktop-interface functions include:
 - system tray icon and tray menu,
 - quick show/hide access to the main TSCR window,
 - direct tray access to key TSCR areas such as Text, Files, Vault, Generator, SysInfo, and related tools,
+- internal application shortcut **Alt+G** for opening Secret Generator / TT-Generator,
 - safe exit handling from hidden/tray state,
 - Windows global shortcut support using **F9** and **Ctrl+F9**,
 - Linux/KDE/Wayland shortcut bridge support through D-Bus, `.desktop` launcher integration, and KGlobalAccel setup,
@@ -366,6 +371,7 @@ Exact package names and version numbers depend on the current release.
 1. Use the system tray menu for quick access to main TSCR areas when the application is minimized or hidden.
 2. On Windows, use **F9** or **Ctrl+F9** for quick show/hide access.
 3. On Linux/KDE/Wayland, use the configured TSCR shortcut bridge where available.
+4. Use **Alt+G** inside the application for quick access to Secret Generator / TT-Generator.
 
 ---
 

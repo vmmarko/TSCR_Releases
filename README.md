@@ -262,6 +262,7 @@ Supported desktop-interface functions include:
 - internal application shortcut **Alt+G** for opening Secret Generator / TT-Generator,
 - safe exit handling from hidden/tray state,
 - Windows global shortcut support using **F9** and **Ctrl+F9**,
+- Linux global shortcut support using **F9** and **Alt+F9**,
 - Linux/KDE/Wayland shortcut bridge support through D-Bus, `.desktop` launcher integration, and KGlobalAccel setup,
 - internal Qt shortcut fallback for environments where global desktop shortcuts are not available,
 

@@ -2,7 +2,7 @@
 
 **Premium Data & Secrets Protection Tool**  
 **Chrono-Entropic Encryption Engine**  
-*Time-variable encryption with controlled unpredictability at the core of a multi-platform protection system for files, text, keys, passwords, and private secrets.*
+*Time-variable encryption with controlled unpredictability at the core of a multi-platform protection system for files, folders, text, keys, passwords, and private secrets.*
 
 **Share YOUR SECRETS only when you want to. 😉😎**
 
@@ -10,17 +10,17 @@
 
 ## Overview
 
-**TSCR – Top Secret Chrono Crypt** is a proprietary, multi-platform data protection and encryption system designed for individuals, professionals, organizations, and companies that need direct control over sensitive data, private files, keys, passwords, tokens, notes, and other personal or business secrets.
+**TSCR – Top Secret Chrono Crypt** is a proprietary, multi-platform data protection and encryption system designed for individuals, professionals, organizations, and companies that need direct control over sensitive data, private files and folders, keys, passwords, tokens, notes, and other personal or business secrets.
 
 TSCR is built around an original **chrono-entropic architecture** in which **time-dependent transformation** and **controlled unpredictability** are treated as structural security parameters, not as decorative or post-processing effects. The goal is not merely declarative encryption, but practical, serious, and trustworthy data protection.
 
-Unlike traditional tools that primarily rely on long-known, widely analysed, and standardized cryptographic patterns, TSCR introduces its own proprietary chrono-entropic model with strong multi-layer encryption and variable key evolution. This original black-box engine design, combined with key-assisted protection logic, native TSCR profiles, AES integration, and unified workflows for protecting text, files, and secrets, gives TSCR a distinct security identity and an important competitive advantage.
+Unlike traditional tools that primarily rely on long-known, widely analysed, and standardized cryptographic patterns, TSCR introduces its own proprietary chrono-entropic model with strong multi-layer encryption and variable key evolution. This original black-box engine design, combined with key-assisted protection logic, native TSCR profiles, AES integration, and unified workflows for protecting text, files, folders, and secrets, gives TSCR a distinct security identity and an important competitive advantage.
 
-Rather than acting as a single fixed algorithm or a simple wrapper around existing encryption standards, TSCR is structured as a layered protection framework composed of a proprietary core engine, multiple operational encryption profiles, unified workflows for text, files, and secrets, local-first storage and protection logic, and multiple interface environments.
+Rather than acting as a single fixed algorithm or a simple wrapper around existing encryption standards, TSCR is structured as a layered protection framework composed of a proprietary core engine, multiple operational encryption profiles, unified workflows for text, files, folders, and secrets, local-first storage and protection logic, and multiple interface environments.
 
 This architecture enables different protection profiles designed to adapt encryption behaviour to specific needs — from balanced everyday use, through AES-integrated processing for larger files and data volumes, to **TOP SECRET** TSCR for **PARANOID-LEVEL** protection.
 
-TSCR brings together practical data protection, local encryption, secret management, secure value generation, multilingual interface support, desktop tray/shortcut access, system diagnostics, update handling, licensing workflow, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
+TSCR brings together practical data protection, local encryption, text, file/folder workflows, secret management, secure value generation, multilingual interface support, desktop tray/shortcut access, system diagnostics, update handling, licensing workflow, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
 
 Core TSCR workflows are designed to work locally, without requiring cloud infrastructure or external trust layers. The desktop application now includes a dedicated app-interface layer for system tray access, quick show/hide behaviour, shortcut handling, and auxiliary desktop utilities. Future service, shell, API, CLI, mobile, browser-extension, portal, and AI-assistant layers are planned as part of the broader TSCR development roadmap.
 
@@ -30,14 +30,14 @@ TSCR combines and represents:
 - a genuine chrono-entropic, multi-layer proprietary algorithm with variable key evolution,
 - controlled unpredictability as a native security layer,
 - text encryption and decryption workflows,
-- file encryption and decryption workflows,
+- file and folder encryption/decryption workflows,
+- Hash, Zip, and UnZip utility functions for file/folder workflows,
 - multiple encryption profiles: TSCR, TOP SECRET, and TSCR AES,
 - structured local secret storage through **Trezor Tajni / Secret Vault**,
 - **Online Vault** support for server/database-backed secret backup and migration workflows,
 - encrypted local and server/database storage models with controlled data handling,
 - secret generation workflows through **TT-Generator / Secret Generator**,
 - a practical Secret Estimator for secret strength evaluation,
-- internal application shortcut **Alt+G** for quick access to Secret Generator / TT-Generator,
 - multilingual GUI runtime with more than 20 supported languages,
 - **TSCR-AI language generation** support for non-listed interface languages,
 - multilingual passphrase dictionary support,
@@ -86,7 +86,7 @@ The user key remains a critical security element. Without the correct key and va
 
 ### Layered Security Workflow
 
-TSCR is not intended to be only a single-purpose encrypt/decrypt utility. It brings together text encryption, file protection, secret storage, secret generation, multilingual support, updates, licensing, and diagnostic/security-oriented workflows.
+TSCR is not intended to be only a single-purpose encrypt/decrypt utility. It brings together text encryption, file/folder protection, secret storage, secret generation, multilingual support, updates, licensing, and diagnostic/security-oriented workflows.
 
 ### Application Integrity and Controlled Access
 
@@ -99,13 +99,13 @@ These mechanisms are intentionally described at a high level. Their purpose is t
 ## Main Features
 
 - Text encryption and decryption
-- File encryption and decryption using the `.tscr` container format
+- File and folder encryption/decryption using the `.tscr` container format and ZIP → encrypt workflow for folders
+- Hash/checksum calculation, Zip, and UnZip utility functions
 - Multiple encryption profiles: TSCR, TOP SECRET, and TSCR AES
 - Local Secret Vault for storing structured private data
 - Online Vault support for server/database-backed secret backup and migration workflows
 - Secret Generator for passwords, passphrases, PINs, tokens, API keys, UUIDs, WiFi passwords, usernames, test card values, and short secure phrases
 - Secret Estimator for approximate strength, entropy, and estimated cracking-time evaluation
-- Internal application shortcut **Alt+G** for quick access to Secret Generator / TT-Generator
 - Multi-TSCR workflow for generating multiple encrypted versions of the same input
 - Multilingual GUI runtime with more than 20 supported languages
 - TSCR-AI language generation workflow for non-listed interface languages
@@ -113,6 +113,7 @@ These mechanisms are intentionally described at a high level. Their purpose is t
 - Desktop system tray menu with quick show/hide and tab access
 - Windows global shortcuts using **F9** and **Ctrl+F9**
 - Linux/KDE/Wayland shortcut bridge support through D-Bus, `.desktop` launchers, and KGlobalAccel setup
+- Auxiliary SysPad utility for quick plain/encrypted text handling
 - System information and diagnostic panel
 - Fully automated update support
 - Hybrid license and activation workflow
@@ -147,7 +148,9 @@ Use this profile for highly sensitive text, compact secrets, keys, credentials, 
 
 Before the AES layer, data is additionally prepared, processed, pre-encrypted, and hashed through the TSCR workflow, so it is not intended to be practically decrypted by a classic AES procedure alone without the TSCR AES decryptor.
 
-This mode is generally the most practical choice for larger files and bulk data.
+This mode is generally the most practical choice for larger files, folders, and bulk data.
+
+For text, compact secrets, short payloads, and smaller files, native TSCR profiles can be highly efficient: practical tests have shown that TSCR, and in some compact-payload scenarios even TOP SECRET TSCR, may achieve roughly 10–20x faster encryption with lower output overhead compared to AES-based processing, despite modern CPU-level AES acceleration.
 
 ---
 
@@ -205,8 +208,6 @@ The generator also includes a practical estimator for approximate strength, entr
 
 Passphrase generation can use localized and multilingual dictionaries, including **LangMIX** mode for combining words from multiple language dictionaries.
 
-- Internal application shortcut **Alt+G** for quick access to Secret Generator / TT-Generator
-
 ---
 
 ## Multilingual Runtime
@@ -258,17 +259,18 @@ Supported desktop-interface functions include:
 
 - system tray icon and tray menu,
 - quick show/hide access to the main TSCR window,
-- direct tray access to key TSCR areas such as Text, Files, Vault, Generator, SysInfo, and related tools,
-- internal application shortcut **Alt+G** for opening Secret Generator / TT-Generator,
+- direct tray access to key TSCR areas such as Text, Files/Folders, Vault, Generator, SysInfo, and related tools,
 - safe exit handling from hidden/tray state,
 - Windows global shortcut support using **F9** and **Ctrl+F9**,
-- Linux global shortcut support using **F9** and **Alt+F9**,
 - Linux/KDE/Wayland shortcut bridge support through D-Bus, `.desktop` launcher integration, and KGlobalAccel setup,
 - internal Qt shortcut fallback for environments where global desktop shortcuts are not available,
+- auxiliary **SysPad** utility for quick plain/encrypted text handling.
 
 On Windows, **F9** and **Ctrl+F9** are intended as quick show/hide shortcuts. Some applications may reserve or intercept **F9**, so **Ctrl+F9** is also supported as a more reliable alternative.
 
 On Linux/KDE/Wayland, TSCR can use a D-Bus + `.desktop` + KGlobalAccel setup for global shortcuts. Depending on the desktop session and shortcut registration state, a manual KDE shortcut setup, logout, or session restart may be required before the shortcut becomes active. On other Linux desktop environments, tray access remains available, while shortcut behaviour may fall back to internal Qt shortcuts when TSCR is focused.
+
+SysPad is an auxiliary desktop utility intended for quick plain/encrypted text handling. It is not a replacement for the main Text tab or Secret Vault workflow.
 
 ---
 
@@ -352,13 +354,19 @@ Exact package names and version numbers depend on the current release.
 3. Make sure the correct key is active.
 4. Click **Decrypt**.
 
-### Encrypting Files
+### Encrypting Files/Folders
 
-1. Open the **Files** tab.
-2. Select the target file.
+1. Open the **Files/Folders** tab.
+2. Select the target file or folder.
 3. Choose the desired protection profile.
-4. Click **Encrypt file**.
+4. Click the appropriate encryption action.
 5. The encrypted output will be saved as a `.tscr` file.
+
+Folders are handled through a controlled **ZIP → encrypt** workflow: TSCR temporarily creates a ZIP archive from the selected folder, encrypts it, and then removes the temporary ZIP when the workflow completes successfully.
+
+### Using Hash, Zip, and UnZip
+
+The Files/Folders area also includes utility **Hash**, **Zip**, and **UnZip** functions. Hash/checksum values are calculated for files and archives. For folder-level integrity checks, create a ZIP archive first and then calculate the hash of the resulting ZIP file.
 
 ### Working with Secret Vault
 
@@ -372,7 +380,7 @@ Exact package names and version numbers depend on the current release.
 1. Use the system tray menu for quick access to main TSCR areas when the application is minimized or hidden.
 2. On Windows, use **F9** or **Ctrl+F9** for quick show/hide access.
 3. On Linux/KDE/Wayland, use the configured TSCR shortcut bridge where available.
-4. Use **Alt+G** inside the application for quick access to Secret Generator / TT-Generator.
+4. Use SysPad only as an auxiliary quick text utility; use the main Text tab and Secret Vault for primary encryption and secret-management workflows.
 
 ---
 
@@ -382,9 +390,11 @@ Exact package names and version numbers depend on the current release.
 - Do not share your key through insecure channels.
 - Use strong, unique keys and passwords.
 - Use TOP SECRET mode for highly sensitive compact data.
-- Use TSCR AES mode for larger files.
+- Use TSCR AES mode for larger files and folders.
 - Keep Secret Vault exports protected.
 - Delete or encrypt unprotected export files after use.
+- Treat temporary or decrypted ZIP archives as sensitive files while they exist on disk.
+- Use Hash/checksum values when you want an additional integrity check for files or archives.
 - Do not disable application login without a clear reason.
 - Regularly update TSCR when new versions are available.
 - Use only official TSCR release/update channels.

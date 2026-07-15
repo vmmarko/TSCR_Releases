@@ -1,10 +1,21 @@
-# TSCR – Top Secret Chrono Crypt (ex TimeCRYPT)
+# TSCR – Top Secret Chrono Crypt
 
+**Version 2.5.0.0 — First Official Production Release**  
 **Premium Data & Secrets Protection Tool**  
 **Chrono-Entropic Encryption Engine**  
 *Time-variable encryption with controlled unpredictability at the core of a multi-platform protection system for files, folders, text, keys, passwords, and private secrets.*
 
 **Share YOUR SECRETS only when you want to. 😉😎**
+
+---
+
+## Production Release Status
+
+**TSCR v2.5.0.0** is the first official production release of the TSCR desktop application and the first complete product built on the TSCR security platform.
+
+This release introduces the production website and distribution channel, a complete live purchase and activation workflow, automatic/deferred/offline activation modes, checkout QR codes, PayPal development-support integration, legal-document handling, the multilingual Help/About system, the protected fallback language module, and the finalized TSCR Tray/app-interface workflow.
+
+TSCR v2.5.0.0 is also the technological foundation for the planned **TSCR Data & Secrets Security Ecosystem**.
 
 ---
 
@@ -20,9 +31,11 @@ Rather than acting as a single fixed algorithm or a simple wrapper around existi
 
 This architecture enables different protection profiles designed to adapt encryption behaviour to specific needs — from balanced everyday use, through AES-integrated processing for larger files and data volumes, to **TOP SECRET** TSCR for **PARANOID-LEVEL** protection.
 
-TSCR brings together practical data protection, local encryption, text, file/folder workflows, secret management, secure value generation, multilingual interface support, desktop tray/shortcut access, system diagnostics, update handling, licensing workflow, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
+TSCR brings together practical data protection, local encryption, text and file/folder workflows, secret management, secure-value generation, multilingual interface support, desktop tray/shortcut access, system diagnostics, update handling, production purchase and activation, legal-document access, and controlled application-integrity / anti-abuse protection into one integrated environment. In that way, it represents a usable hybrid between an advanced data-protection tool and a personal/business secret-management system.
 
-Core TSCR workflows are designed to work locally, without requiring cloud infrastructure or external trust layers. The desktop application now includes a dedicated app-interface layer for system tray access, quick show/hide behaviour, shortcut handling, and auxiliary desktop utilities. Future service, shell, API, CLI, mobile, browser-extension, portal, and AI-assistant layers are planned as part of the broader TSCR development roadmap.
+Core protection workflows are designed to work locally, without requiring a permanent cloud connection or external trust layer. Online services are used only for clearly defined operations that require network communication, such as purchase, payment confirmation, activation synchronization, selected backup/migration functions, updates, and support workflows.
+
+The desktop application includes a dedicated app-interface layer for system tray access, instant show/hide behaviour, shortcut handling, and auxiliary desktop utilities. Future TSCR modules, services, and platforms are planned as part of the broader **TSCR Data & Secrets Security Ecosystem** roadmap.
 
 TSCR combines and represents:
 
@@ -46,10 +59,16 @@ TSCR combines and represents:
 - Linux/KDE/Wayland shortcut bridge support through D-Bus, `.desktop` launcher integration, and KGlobalAccel setup,
 - extended system-information and diagnostic functionality,
 - fully automated update support,
-- hybrid licensing, activation, settings, and related support workflows,
+- a fast, user-friendly production purchase and licensing workflow,
+- automatic activation as the default and recommended activation mode,
+- deferred and offline/manual activation workflows,
+- checkout QR codes for direct mobile payment in all activation modes,
+- integrated Legal Documents and EULA acceptance handling,
+- PayPal development-support/donation workflow with direct link and QR access,
 - controlled Trial, Demo, Recovery, and restricted-access runtime states,
-- application-integrity, anti-reset, anti-abuse, and license-protection mechanisms,
-- prepared foundations for future service, shell, API, CLI, mobile, browser-extension, portal, business/team, and TSCR-AI security-assistant layers.
+- application-integrity, protected-runtime, anti-reset, anti-abuse, and license-protection mechanisms,
+- protection of approximately 98% of TSCR's own application and runtime code through the original TSCR encryption and controlled code-loading system,
+- prepared foundations for future TSCR modules, services, mobile/companion applications, API/CLI/browser integration, secure communication, and AI-assisted security workflows.
 
 ---
 
@@ -58,6 +77,8 @@ TSCR combines and represents:
 | Area | Value |
 |---|---|
 | Product | TSCR – Top Secret Chrono Crypt |
+| Version | 2.5.0.0 |
+| Release status | First Official Production Release |
 | Previous line | TimeCRYPT / ECCrypt – ErraticChronoCRYPT |
 | Tagline | Premium Data & Secrets Protection Tool |
 | Engine | Chrono-Entropic Encryption Engine |
@@ -88,11 +109,15 @@ The user key remains a critical security element. Without the correct key and va
 
 TSCR is not intended to be only a single-purpose encrypt/decrypt utility. It brings together text encryption, file/folder protection, secret storage, secret generation, multilingual support, updates, licensing, and diagnostic/security-oriented workflows.
 
-### Application Integrity and Controlled Access
+### Application Integrity, Protected Runtime, and Controlled Access
 
-TSCR also includes application-integrity, license-protection, anti-reset, anti-abuse, and controlled demo/recovery mechanisms intended to help preserve a trusted runtime environment and reduce unauthorized use, repeated trial abuse, local-state manipulation, and suspicious execution scenarios.
+TSCR is based on the principle that **user data and secrets cannot be sufficiently protected if the application and its engine are not sufficiently protected**.
 
-These mechanisms are intentionally described at a high level. Their purpose is to protect the application environment itself without exposing internal protection logic, storage details, or classification rules.
+For that reason, TSCR protects not only user data, but also its own engine, runtime, local identity, protection state, and licensing workflow. Approximately **98% of TSCR's own application and runtime code is protected by the original TSCR encryption and controlled code-loading system**, effectively covering virtually all key functional application code.
+
+Protected layers are decrypted and loaded in a controlled manner during execution instead of remaining permanently exposed as ordinary readable source code. Together with the TSCR black-box strategy, integrity checks, anti-reset, anti-abuse, license-protection, and controlled Demo/Recovery mechanisms, this model significantly increases resistance to analysis, unauthorized modification, state manipulation, and application misuse.
+
+These mechanisms are intentionally described at a high level so that the protection model can be explained without exposing internal implementation details, storage locations, or classification rules.
 
 ---
 
@@ -116,11 +141,17 @@ These mechanisms are intentionally described at a high level. Their purpose is t
 - Auxiliary SysPad utility for quick plain/encrypted text handling
 - System information and diagnostic panel
 - Fully automated update support
-- Hybrid license and activation workflow
+- Production purchase and activation workflow with automatic, deferred, and offline/manual activation modes
+- Automatic activation as the default and recommended mode
+- Checkout link and QR-code access for convenient desktop or mobile payment
+- PRO-03, PRO-06, PRO-12, PRO-24, and LEGACY license plans
+- Integrated Legal Documents and first-run EULA acceptance workflow
+- PayPal development-support/donation link and QR code
 - Controlled Trial, Demo, Recovery, and restricted-access runtime states
-- Application-integrity, anti-reset, anti-abuse, and license-protection mechanisms
+- Application-integrity, protected-runtime, anti-reset, anti-abuse, and license-protection mechanisms
+- Approximately 98% protection of TSCR's own application/runtime code through the original TSCR encryption and controlled code-loading system
 - Offline-first local operation
-- Prepared architectural foundation for future service, shell, API, CLI, mobile, browser-extension, portal, business/team, and TSCR-AI security-assistant development
+- Prepared architectural foundation for the broader TSCR Data & Secrets Security Ecosystem
 
 ---
 
@@ -251,9 +282,11 @@ This module is primarily informational and diagnostic.
 
 ---
 
-## Desktop Interface, Tray, and Shortcuts
+## Desktop Interface, TSCR Tray, and Shortcuts
 
-TSCR includes a desktop app-interface layer that extends the main GUI with system-level convenience features.
+TSCR includes a dedicated desktop app-interface layer and **TSCR Tray** workflow that make the application immediately available without interrupting the user's current work.
+
+With a single **F9** press, the user can show TSCR, protect a text, file, folder, or secret, press **F9** again to return TSCR to the system tray, and continue the previous task. Direct tray access to the main TSCR areas significantly improves speed, practicality, and everyday usability.
 
 Supported desktop-interface functions include:
 
@@ -276,27 +309,40 @@ SysPad is an auxiliary desktop utility intended for quick plain/encrypted text h
 
 ## License and Activation
 
-TSCR includes a hybrid license workflow with support for license status, plan selection, purchase ID, activation code, license validity, controlled access states, and user ID display.
+TSCR v2.5.0.0 includes a complete production purchase and licensing workflow with support for **PRO-03**, **PRO-06**, **PRO-12**, **PRO-24**, and **LEGACY** license plans.
 
-License and access concepts include:
+The workflow covers plan selection, purchase-ID generation, secure checkout, payment-status tracking, activation, email delivery/records, local license finalization, and controlled synchronization with TSCR services.
 
-- PRO time-limited licenses,
-- LEGACY / lifetime-style license,
-- Trial mode for eligible valid first-time users/devices,
-- Demo mode as a controlled one-hour limited-access state with visible status/remaining-time information,
-- automatic transition from expired Demo mode to restricted-access state,
-- Recovery / restricted states for unresolved identity, integrity, protection, or license situations,
-- offline scenarios,
-- online scenarios,
-- automatic activation scenarios,
-- license-status-based access control,
-- anti-reset and anti-abuse protection intended to reduce repeated trial abuse and suspicious runtime scenarios.
+Three activation modes are available:
 
-Trial and Demo are not the same state. Trial is intended for a valid new user/device when the active release policy allows trial access. Demo is a controlled one-hour mode that may be used for limited evaluation, testing, VM/sandbox-like environments, recovery situations, suspicious local-state conditions, or other non-regular runtime contexts. The application should present Demo status and remaining time to the user, and after the Demo window expires it should move to restricted-access state instead of resetting the Demo period on restart.
+- **Automatic activation** — the default and recommended mode. It is designed for the fastest and simplest continuation of work after payment is confirmed.
+- **Deferred activation** — allows the user to purchase a future license in advance and activate it later using the activation code delivered by email.
+- **Offline / manual activation** — intended for a TSCR device that does not have direct internet access during purchase or activation. The checkout can be completed on another online device, after which the license code and offline token are used on the original TSCR device.
 
-TSCR may restrict or limit access when the application cannot establish a trusted identity, license, integrity, or local protection state. This is part of the application protection model and is intended to preserve reliable licensing, reduce misuse, and protect the expected runtime environment.
+In all three modes, the checkout page can be opened directly from TSCR or transferred to a phone by scanning the displayed **QR code**, enabling convenient mobile payment without changing the underlying purchase and activation workflow.
 
-Final licensing, purchase, donation, activation, and support flows depend on the active release channel and TSCR portal/backend availability.
+Important license rules:
+
+- TSCR licenses do **not** stack.
+- A new time-limited license starts when activation is successfully completed, not when the purchase is created.
+- Automatic activation is primarily intended for users whose license has expired or who do not currently have an active license.
+- Deferred activation is intended for users who still have a valid license but want to buy the next license in advance.
+- An unpaid active purchase can be cancelled and recreated with another plan or activation mode.
+- A confirmed paid purchase cannot be treated as an abandoned unpaid checkout.
+
+Core local TSCR protection functions are not dependent on a permanent server connection. Network access is used where required for checkout, payment verification, activation synchronization, email delivery, selected updates, and related service operations.
+
+License and access states also include:
+
+- Trial mode for an eligible first-time user/device,
+- Demo mode as a controlled one-hour limited-access state with visible remaining time,
+- automatic transition from expired Demo mode to restricted access,
+- Recovery/restricted states for unresolved identity, integrity, protection, or license situations,
+- application-integrity, anti-reset, anti-abuse, and license-protection checks.
+
+Trial and Demo are not the same state. Trial is intended for an eligible valid new user/device. Demo is a controlled limited-time environment used for evaluation and selected non-regular runtime situations. Restarting the application does not reset the Demo period.
+
+TSCR may restrict access when it cannot establish a trusted identity, license, integrity, or local protection state. This behaviour is part of the application's defense-in-depth and license-protection model.
 
 ---
 
@@ -384,6 +430,25 @@ The Files/Folders area also includes utility **Hash**, **Zip**, and **UnZip** fu
 
 ---
 
+
+## Buying and Activating a License
+
+1. Open the **License** tab.
+2. Select the required PRO or LEGACY plan.
+3. Select the activation mode. **Automatic** is the default and recommended option.
+4. Create the purchase.
+5. Open the checkout directly or scan the displayed QR code with a phone.
+6. Complete payment through the official checkout page.
+7. Keep TSCR open while the payment status is checked, or reopen TSCR later to continue the saved purchase workflow.
+8. Complete the mode-specific activation:
+   - automatic activation continues without manual code entry;
+   - deferred activation uses the code delivered by email;
+   - offline/manual activation uses the delivered license code and offline token.
+
+A new time-limited license starts from successful activation. It does not extend or stack on top of an already active license.
+
+---
+
 ## Security Recommendations
 
 - Keep your master key safe.
@@ -404,25 +469,40 @@ The Files/Folders area also includes utility **Hash**, **Zip**, and **UnZip** fu
 
 ---
 
+
+## Legal Documents and Development Support
+
+TSCR includes an integrated **Legal Documents** area with access to:
+
+- End-User License Agreement (EULA),
+- Terms of Sale, including the applicable refund/cancellation section,
+- Privacy Policy,
+- Security Notice,
+- Donation Policy.
+
+EULA acceptance is required before first regular use of the applicable release. Acceptance information is stored as part of the controlled local/application record.
+
+Users can support further TSCR development through the official **Support / Donate** workflow. The donation page can be opened directly or through the displayed PayPal QR code.
+
+The applicable legal-document versions are available directly through the application. Public copies and release information may also be provided through the official TSCR website.
+
+---
+
 ## Roadmap
 
-The TSCR development direction includes deeper development toward:
+**TSCR v2.5.0.0 is the first complete product and technological core of the future TSCR Data & Secrets Security Ecosystem.**
 
-- deeper desktop-interface integration,
-- local TSCR service / agent,
-- shell and context-menu integration,
-- CLI,
-- local API,
-- browser-extension bridge,
-- mobile version,
-- portal and download system,
-- license backend,
-- business/team-oriented models,
-- optional TSCR-AI tools and security assistant.
+The planned development direction includes:
 
-The long-term vision is to evolve TSCR from a premium data and secrets protection tool into a broader:
+- **TSCR Authenticator** for TOTP/HOTP authentication and 2FA-secret management,
+- **TSCR-AI Security Assistant** for intelligent security analysis, assistance, and controlled automation,
+- **TSCR SecureCode engine/framework** as a language-agnostic system for protecting and controlling the execution of application code,
+- **TopSecretChat** for secure and private communication,
+- mobile and companion applications,
+- service, API, CLI, shell, and browser-integration layers,
+- additional modules for protecting data, secrets, identity, authentication, application code, and digital communication.
 
-**Data & Secrets Security Ecosystem**
+The objective is for TSCR to evolve from the current **Premium Data & Secrets Protection Tool** into a broader **Hybrid Cybersecurity & Cryptography Solution**, and then into a modular **Data & Secrets Security Ecosystem**.
 
 ---
 
@@ -444,11 +524,12 @@ Today, TSCR is developed as a standalone proprietary security product focused on
 
 | Component | Version |
 |---|---|
-| TSCR | 2.4.1.3 |
-| Engine | 2.4.1.3 |
-| GUI | 1.0.2.6 |
+| TSCR | 2.5.0.0 |
+| Engine | 2.5.0.0 |
+| GUI | 2.5.0.0 |
 
-Release date: 2026-06-08
+Release: **First Official Production Release**  
+Release date: **2026-07-14**
 
 ---
 
